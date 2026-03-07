@@ -28,28 +28,35 @@ article {
 /* Language switcher */
 .lang-switcher {
   display: flex;
-  gap: 12px;
+  gap: 6px;
   justify-content: flex-end;
   padding: 12px 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .lang-switcher a {
-  color: #666;
-  border-bottom: 1px solid transparent;
-  padding: 2px 0;
+  color: #555;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-radius: 100px;
+  padding: 4px 12px;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
 }
 
 .lang-switcher a:hover {
   color: #1a5f7a;
-  border-bottom-color: #1a5f7a;
+  border-color: #1a5f7a;
+  background: #f0f4f6;
 }
 
 .lang-switcher a.active {
-  color: #111;
-  font-weight: 700;
-  border-bottom: none;
+  color: #fff;
+  background: #1a5f7a;
+  border-color: #1a5f7a;
+  font-weight: 600;
   cursor: default;
 }
 
@@ -57,6 +64,14 @@ article {
 [dir="rtl"] {
   direction: rtl;
   text-align: right;
+}
+
+[lang="he"] body {
+  font-family: 'David Libre', 'Georgia', serif;
+}
+
+[lang="ar"] body {
+  font-family: 'Noto Naskh Arabic', 'Georgia', serif;
 }
 
 [dir="rtl"] blockquote {
