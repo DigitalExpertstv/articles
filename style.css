@@ -210,8 +210,8 @@ figcaption {
 }
 
 .author-photo-small {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -219,7 +219,7 @@ figcaption {
 
 .author-block-inline {
   margin-top: 24px;
-  padding: 16px 20px;
+  padding: 12px 16px;
 }
 
 .author-info {
