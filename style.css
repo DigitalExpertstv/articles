@@ -210,8 +210,8 @@ figcaption {
 }
 
 .author-photo-small {
-  width: 36px;
-  height: 36px;
+  width: 108px;
+  height: 108px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
