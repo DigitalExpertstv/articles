@@ -25,6 +25,69 @@ article {
   padding: 40px 24px 80px;
 }
 
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding: 12px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.85rem;
+}
+
+.lang-switcher a {
+  color: #666;
+  border-bottom: 1px solid transparent;
+  padding: 2px 0;
+}
+
+.lang-switcher a:hover {
+  color: #1a5f7a;
+  border-bottom-color: #1a5f7a;
+}
+
+.lang-switcher a.active {
+  color: #111;
+  font-weight: 700;
+  border-bottom: none;
+  cursor: default;
+}
+
+/* RTL support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: 4px solid #1a5f7a;
+  padding: 16px 24px 16px 16px;
+}
+
+[dir="rtl"] .sources li {
+  padding-left: 0;
+  padding-right: 16px;
+}
+
+[dir="rtl"] .sources li::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] ul, [dir="rtl"] ol {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+[dir="rtl"] .lang-switcher {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .author-block {
+  flex-direction: row-reverse;
+}
+
 /* Header */
 .article-header {
   margin-bottom: 40px;
