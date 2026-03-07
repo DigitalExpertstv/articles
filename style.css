@@ -209,6 +209,19 @@ figcaption {
   flex-shrink: 0;
 }
 
+.author-photo-small {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.author-block-inline {
+  margin-top: 24px;
+  padding: 16px 20px;
+}
+
 .author-info {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 0.9rem;
