@@ -237,6 +237,7 @@ h2 {
   margin: 48px 0 20px;
   padding-bottom: 8px;
   border-bottom: 2px solid #e0e0e0;
+  scroll-margin-top: 56px;
 }
 
 h3 {
